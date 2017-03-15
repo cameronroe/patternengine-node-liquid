@@ -1,12 +1,14 @@
 {
-  "name": "patternengine-node-mustache",
-  "description": "The Mustache engine for Pattern Lab / Node",
+  "name": "patternengine-node-liquid",
+  "description": "The Liquid engine for Pattern Lab / Node",
   "version": "1.0.2",
-  "main": "lib/engine_mustache.js",
+  "main": "lib/engine_liquid.js",
   "dependencies": {
-    "mustache": "^2.2.0"
+    "shopify-liquid": "1.7.2"
   },
   "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.2.0"
   },
   "keywords": [
     "Pattern Lab",
@@ -15,17 +17,17 @@
     "Grunt",
     "Gulp",
     "Javascript",
-    "Mustache"
+    "Liquid"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pattern-lab/patternengine-node-mustache.git"
+    "url": "https://github.com/cameronroe/patternengine-node-liquid.git"
   },
   "bugs": "https://github.com/pattern-lab/patternlab-node/issues",
-  "author": "Brian Muenzenmeyer & Geoffrey Pursell",
+  "author": "Cameron Roe",
   "license": "MIT",
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "mocha"
   },
   "engines": {
     "node": ">=0.1"
